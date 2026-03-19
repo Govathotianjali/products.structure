@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Scraper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Product Info Extractor 🛒</h1>
+    
+    <textarea id="urls" placeholder="Enter product URLs (one per line)"></textarea>
+    <button onclick="extractData()">Extract Data</button>
+    <button onclick="downloadCSV()">Download CSV</button>
+    
+    <h2>Extracted Products</h2>
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
